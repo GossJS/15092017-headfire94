@@ -1,0 +1,37 @@
+<?xml encoding="UTF-8"?>
+        <!ELEMENT ЗнанияВебРазработки (Языки,УстройствоСетей,
+                УстройствоБраузера)>
+        <!ELEMENT Языки (Язык)+>
+        <!ELEMENT УстройствоСетей (HTTP,DNS)>
+        <!ELEMENT УстройствоБраузера (DOM,ХранилищаДанных,ИнтерпретаторJS,API)>
+        <!ELEMENT Язык ((Препроцессоры,Фреймворки)
+                |(ФреймворкиИБиблиотеки,ИнструментыТестирования))?>
+        <!ATTLIST Язык название CDATA  #REQUIRED>
+
+        <!ELEMENT HTTP (HTTPS)>
+        <!ELEMENT DNS EMPTY>
+
+        <!ELEMENT DOM EMPTY>
+        <!ELEMENT ХранилищаДанных EMPTY>
+        <!ELEMENT ИнтерпретаторJS EMPTY>
+        <!ELEMENT API EMPTY>
+
+        <!ELEMENT Препроцессоры (Препроцессор)+>
+        <!ELEMENT Фреймворки (Фреймворк)+>
+
+        <!ELEMENT ФреймворкиИБиблиотеки (Библиотека|Фреймворк)+>
+        <!ELEMENT ИнструментыТестирования (ИнструментТестирования)+>
+
+        <!ELEMENT HTTPS EMPTY>
+
+        <!ELEMENT Препроцессор EMPTY>
+        <!ATTLIST Препроцессор название CDATA #REQUIRED>
+
+        <!ELEMENT Библиотека EMPTY>
+        <!ATTLIST Библиотека название CDATA #REQUIRED>
+
+        <!ELEMENT ИнструментТестирования EMPTY>
+        <!ATTLIST ИнструментТестирования название CDATA #REQUIRED>
+
+        <!ELEMENT Фреймворк EMPTY>
+        <!ATTLIST Фреймворк название CDATA #REQUIRED>
