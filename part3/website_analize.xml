@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE statistics PUBLIC "part_03" "website_analyze.dtd">
+<statistics>
+    <ip title="Самый частый IP-адрес" addr="077.234.203.101" frequency="12"/>
+    <topVisits>
+        <PC>
+            <OS name="Windows" frequency="87"/>
+            <OS name="Linux" frequency="8"/>
+            <OS name="Mac OS" frequency="6"/>
+        </PC>
+        <Mobile>
+            <device name="iPhone with Mac OS" frequency="5"/>
+            <device name="iPad with Mac OS" frequency="1"/>
+            <device name="Mobiles with Android" frequency="10"/>
+        </Mobile>
+    </topVisits>
+    <ips title="топ 5 адресов в порядке убывания">
+        <ip addr="077.234.203.101" frequency="12"/>
+        <ip addr="005.144.096.251" frequency="11"/>
+        <ip addr="081.222.086.058" frequency="6"/>
+        <ip addr="094.019.018.060" frequency="4"/>
+        <ip addr="005.164.066.173" frequency="4"/>
+    </ips>
+</statistics>

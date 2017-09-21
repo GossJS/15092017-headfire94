@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+        <!ELEMENT statistics (ip,topVisits,ips)>
+        <!ELEMENT ip EMPTY>
+        <!ATTLIST ip
+                frequency CDATA #REQUIRED
+                addr CDATA #REQUIRED
+                title CDATA #IMPLIED
+                >
+        <!ELEMENT topVisits (PC, Mobile)>
+        <!ELEMENT PC (OS+)>
+        <!ELEMENT OS (#PCDATA) EMPTY>
+        <!ATTLIST OS name CDATA #REQUIRED>
+        <!ATTLIST OS frequency CDATA #REQUIRED>
+
+        <!ELEMENT Mobile (device+)>
+        <!ELEMENT device (#PCDATA)>
+        <!ATTLIST device name CDATA #REQUIRED>
+        <!ATTLIST device frequency CDATA #REQUIRED>
+        <!ELEMENT ips (ip+)>
+        <!ATTLIST ips title CDATA #REQUIRED>
