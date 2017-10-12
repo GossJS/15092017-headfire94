@@ -3,4 +3,6 @@
 
 см. https://kodaktor.ru/g/15092017
 
-результаты, пожалуйста, помещайте в репозиторий-ответ
+# 22092017 (update)
+part4 - json schema
+part5 - xml schema
